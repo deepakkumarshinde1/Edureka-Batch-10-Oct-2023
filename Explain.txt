@@ -1,0 +1,180 @@
+Javascript 
+https://www.youtube.com/watch?v=W6NZfCO5SIk
+
+Typescript
+https://www.youtube.com/watch?v=30LWjhZzg50
+https://www.youtube.com/watch?v=d56mG7DezGs
+
+Bootstrap 
+https://www.youtube.com/watch?v=O_9u1P5YjVc&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR
+
+Material UI
+https://www.youtube.com/watch?v=vyJU9efvUtQ
+
+Front End Application
+    --> Client Interaction  area
+    --> HTML --> Create Structure Of a web page
+    ---> CSS  --> Design Web page
+    ---> Javascript --> User Interaction With application
+
+    ECMA Script
+    ES5 & ES6
+
+BackEnd (Server + Database) 
+
+React --> 
+    Lib --> User Interaction
+    React DOM
+    React Router DOM*
+    fetch
+
+    react class or function
+    react typescript / javascript
+
+    --> V-DOM
+    --> Upgrade low to high --> easy
+JQuery
+
+
+  
+    Set Functionalities 
+    XHR
+    fetch
+Angular --> Framework 
+    --> User Interaction In Angular
+    --> Service
+    --> 
+    --> Class 
+    --> Typescript
+    --> REAL DOM
+    --> Upgrade  low --> high
+    Set of different lib
+
+MVVM
+M = Model 
+V = View 
+C = Controller
+
+
+Jquery UI
+
+create a react application
+    Node Js (Runtime Environment  + Server)
+    develope react (Node JS) ---> production
+
+
+    development server (Node JS)
+
+
+    # after installation of node js (npm --> node package manager)
+
+    # npm --> cli 
+
+    # handel your project ()
+        run ---> npm start
+        test ---> npm run test
+        build --> npm run build
+        add new lib (packages)  --> npm i <package-name> / npm install <package-name>
+        update lib --> npm update <package-name>
+        remove lib --> npm un <package-name> / npm uninstall <package-name>
+
+    # create react project 
+        basic --> 20%
+
+        npx create-react-app project-name
+
+        node package execute (  downloaded ---> run ---> removed)
+
+
+    Installing 
+            react,
+            react-dom (vDOM),
+            and 
+            react-scripts 
+                run dev server
+                test app
+                build app
+            with cra-template (javascript)
+
+    npx create-react-app app-name
+    cd app-name
+    npm start
+
+    node_modules (auto-gen)
+        all project dependency
+    
+    package-lock.json (auto gen)
+        information of all project dependency's dependency
+
+    package.json*
+        main project config file
+    
+    src 
+        --> css
+        --> js
+        --> testing
+        --> font
+        --> background-image (in css)
+
+    public
+        --> index.html
+        --> images
+        --> favicon
+        --> manifest
+        robots.txt
+            --> alow or disallow file scan for search engines
+
+        
+# Function Component
+# Class Component
+
+Class Component < 16.8  >= Function Component + (Hooks)
+
+index.js --> Entry File
+
+REACT DOM --> vDOM
+
+# JSX and Styling
+# Javascript XML
+
+# JSX Element Must have a One Parent Element
+# <> </> JSX fragment
+# class --> className
+# for ---> htmlFor
+# always close 
+
+
+# state 
+    State use to handel a data of a component
+    hook useState
+
+
+class component in build state
+function component don't have a own state
+    hooks --> functions to perform complex operation 
+    hook is not used in class component
+
+    in-build of react
+    3rd party hooks useParams , useDispatch , useSelector
+
+    hooks in react start with "use"
+    useState()
+
+
+Es6 --> destructing :: extraction logic from object or array
+
+import React from 'react';
+
+import {useState} from 'react
+
+useState return array [data,updateMethod]
+
+# events in react js
+
+# e6 ---> arrow function 
+()=>{}
+
+
+# loop --> array.map((value,index)=>{
+
+})
