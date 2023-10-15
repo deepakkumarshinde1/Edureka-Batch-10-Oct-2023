@@ -1,12 +1,14 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { saveCategoryList } from "../redux/product.slice";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function Home() {
   let dispatch = useDispatch();
   let navigate = useNavigate();
   let { categories } = useSelector((state) => state.products);
+  //let [categories,setCategories] = useState([])
+  // let {setCategories,categories} = useProductContext()
   let getCategories = async () => {
     try {
       let url = `http://localhost:3004/categories`;
@@ -16,6 +18,7 @@ function Home() {
 
       // called dispatch
       dispatch(saveCategoryList(data));
+      //setCategories(data)
     } catch (error) {
       console.log(error);
     }
