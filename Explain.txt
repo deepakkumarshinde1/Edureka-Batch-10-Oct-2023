@@ -11,6 +11,9 @@ https://www.youtube.com/watch?v=O_9u1P5YjVc&list=PL4cUxeGkcC9joIM91nLzd_qaH_Aimm
 Material UI
 https://www.youtube.com/watch?v=vyJU9efvUtQ
 
+React-Router-DOM
+https://www.youtube.com/watch?v=WfpmvgVZD1A
+
 Front End Application
     --> Client Interaction  area
     --> HTML --> Create Structure Of a web page
@@ -142,6 +145,7 @@ REACT DOM --> vDOM
 # class --> className
 # for ---> htmlFor
 # always close 
+# style = {{ props: 'value', props:'value'  }}
 
 
 # state 
@@ -178,3 +182,34 @@ useState return array [data,updateMethod]
 # loop --> array.map((value,index)=>{
 
 })
+
+
+home ---> /
+search ->  /products
+single --> /product
+cart --> /cart
+
+Single Page Application
+
+react-router-dom
+v6
+    Components
+        BrowserRouter --> index.js
+        Routes ---> any component
+        Route ---> any component
+        Link ---> any component
+        NavLink ---> any component
+    Hooks
+        useParams() ---> any component
+        useNavigate() ---> any component
+        useQueryString() ---> any component
+
+
+Component Lifecycle
+    init --> only once
+    load --> mounting --> only once
+    update --> updating --> on change of component data
+    unload --> unmounting --> only once
+
+    useEffect --> will run when a sideEffect happens in component
+  
