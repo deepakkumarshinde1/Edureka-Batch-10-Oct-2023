@@ -5,10 +5,12 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import PageNotFound from "./components/404";
+import Error from "./components/Errors";
 
 function App() {
   return (
     <>
+      <Error />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

@@ -216,3 +216,25 @@ Component Lifecycle
 
     useEffect --> will run when a sideEffect happens in component
   
+
+Redux Saga
+    call ---> call and return a service output
+    put --> call redux action store/update data (like dispatch)
+    takeEvery ---> allow multiple request of same api at same time
+    takeLatest -->  allow recent request of api and will discard other if they are of same api
+    all --> run a multiple api request of different api call
+
+    Service
+        all service
+
+    Handler
+        call and put
+
+    Watcher
+        takeEvery or takeLatest
+
+    RooSaga
+        all
+        
+    
+    ---> 

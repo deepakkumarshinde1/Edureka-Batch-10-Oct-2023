@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { saveCategoryList } from "../redux/product.slice";
+import { getCategoryList, saveCategoryList } from "../redux/product.slice";
 import { useEffect, useState } from "react";
 
 function Home() {
@@ -9,28 +9,15 @@ function Home() {
   let { categories } = useSelector((state) => state.products);
   //let [categories,setCategories] = useState([])
   // let {setCategories,categories} = useProductContext()
-  let getCategories = async () => {
-    try {
-      let url = `http://localhost:3004/categories`;
-      let response = await fetch(url, { method: "GET" });
-      // collect data from response
-      let data = await response.json();
 
-      // called dispatch
-      dispatch(saveCategoryList(data));
-      //setCategories(data)
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  useEffect(() => {
-    if (categories.length === 0) getCategories();
-  }, []); // only once
+  // useEffect(() => {
+  //   if (categories.length === 0) dispatch(getCategoryList());
+  // }, []); // only once
   return (
     <>
       <div className="container-fluid categories" style={{ marginTop: "60px" }}>
         <div className="container">
+          <button onClick={() => dispatch(getCategoryList())}>Get Data</button>
           <div className="d-flex justify-content-start catemobile gap-3">
             {categories.map((value, index) => {
               return (
