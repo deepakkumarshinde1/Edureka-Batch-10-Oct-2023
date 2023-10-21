@@ -238,3 +238,29 @@ Redux Saga
         
     
     ---> 
+
+    Variables
+    operators
+    type casting
+    cond. statements
+    ternary operators
+    loops (for while do while)
+    arrays ( push , splice , slice , find , filter , map ,foreach , include , from ,every ,sort , reduce)
+    object (assign , freeze , keys , values , entries)
+
+    basic of DOM (event , get data from input , set data to html )
+
+    eventLoop
+
+    es6
+        promises (async / await )
+        destructing
+        spread operation
+        rest param
+        default param
+        object literals
+        string template
+        closures
+        fetch 
+        localStorage
+        cookies
