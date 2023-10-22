@@ -15,12 +15,10 @@ const ProductSlice = createSlice({
       state.productList = action.payload;
     },
     saveCategoryList: (state, action) => {
-      console.log("save Category");
       state.categories = action.payload;
     },
-    getCategoryList: (state, action) => {
-      console.log("getCategoryList reducer called");
-    },
+    getCategoryList: (state, action) => {},
+    getProductList: (state, action) => {},
     setError: (state, action) => {
       state.error = {
         isError: true,
@@ -43,4 +41,5 @@ export const {
   getCategoryList,
   saveProductList,
   saveCategoryList,
+  getProductList,
 } = ProductSlice.actions;

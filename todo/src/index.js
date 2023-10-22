@@ -3,11 +3,14 @@ import ReactDOM from "react-dom/client"; // node_modules
 import "./index.css";
 import App from "./App"; // custom_module
 import reportWebVitals from "./reportWebVitals";
+import { TodoContextProvider } from "./context/todo.context";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.Fragment>
-    <App /> {/* running/call component */}
+    <TodoContextProvider>
+      <App /> {/* running/call component */}
+    </TodoContextProvider>
   </React.Fragment>
 );
 

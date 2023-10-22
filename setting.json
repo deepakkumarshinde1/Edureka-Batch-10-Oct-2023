@@ -1,0 +1,81 @@
+{
+  "editor.quickSuggestions": {
+    "comments": false, // <- no 24x7 IntelliSense in comments
+    "strings": true, // but in strings and the other parts of source files
+    "other": true
+  },
+  "extensions.ignoreRecommendations": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "liveServer.settings.donotVerifyTags": true,
+  "editor.minimap.enabled": false,
+  "editor.fontSize": 16,
+  "git.ignoreWindowsGit27Warning": true,
+  "explorer.confirmDelete": false,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "html-css-class-completion.enableEmmetSupport": true,
+  "html-css-class-completion.includeGlobPattern": "**/*.{css,html,pug}",
+  "html-css-class-completion.JavaScriptLanguages": [
+    "javascript",
+    "javascriptreact",
+    "typescriptreact"
+  ],
+  "html-css-class-completion.HTMLLanguages": [
+    "pug",
+    "html",
+    "vue",
+    "razor",
+    "blade",
+    "handlebars",
+    "twig",
+    "django-html",
+    "php",
+    "markdown",
+    "erb",
+    "ejs",
+    "svelte"
+  ],
+  "material-icon-theme.folders.theme": "specific",
+  "workbench.iconTheme": "material-icon-theme",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.editor.untitled.hint": "hidden",
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+  "files.associations": {
+    "*.js": "javascriptreact",
+    "*.jsx": "javascriptreact"
+  },
+  "screencastMode.onlyKeyboardShortcuts": true,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/assets/css"
+    }
+  ],
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "cSpell.userWords": ["filte", "MERN", "opreate", "unorder"],
+  "[javascriptreact]": {},
+  "explorer.confirmDragAndDrop": false,
+  "workbench.editor.enablePreview": false,
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "cSpell.enableFiletypes": ["html"],
+  "editor.formatOnSave": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "git.confirmSync": false,
+  "tabnine.experimentalAutoImports": true,
+  "workbench.editor.empty.hint": "hidden",
+  "[javascript]": {
+    "editor.maxTokenizationLineLength": 2500
+  },
+  "window.zoomLevel": 1
+}

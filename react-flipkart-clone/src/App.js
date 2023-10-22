@@ -14,7 +14,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/product-search" element={<ProductSearch />} />
+        <Route path="/product-search/:c_id" element={<ProductSearch />} />
         <Route path="/product" element={<ProductDetails />} />
         <Route path="/page-not-found" element={<PageNotFound />} />
         <Route path="*" element={<Navigate to="/page-not-found" />} />

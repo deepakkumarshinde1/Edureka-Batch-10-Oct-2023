@@ -1,40 +1,30 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { saveProductList } from "../redux/product.slice";
+import { getProductList, saveProductList } from "../redux/product.slice";
+import { useParams, useSearchParams } from "react-router-dom";
 
 function ProductSearch() {
   let dispatch = useDispatch();
+  let { c_id } = useParams(); // /:id
+  let [URLSearchParams] = useSearchParams(); // ?name="data"
+
   let { productList } = useSelector((state) => state.products);
 
-  let getProductList = async () => {
-    try {
-      let url = `http://localhost:3004/list`;
-      let response = await fetch(url, { method: "GET" });
-      // collect data from response
-      let data = await response.json();
-
-      // called dispatch
-      dispatch(saveProductList(data));
-    } catch (error) {
-      console.log(error);
-    }
-  };
   // GET POST PUT DELETE
   // XHR --> XML http Request
 
   useEffect(() => {
-    console.log("mounting");
-    getProductList();
+    dispatch(getProductList(c_id));
 
     return () => {
-      console.log("unmounting");
+      dispatch(saveProductList([]));
     };
   }, []); // [stateVariables] --> only once // mounting
   return (
     <>
       <div className="container" style={{ marginTop: "60px" }}>
         <div className="py-3">
-          <h5>All Products</h5>
+          <h5>All Products of {URLSearchParams.get("name")}</h5>
         </div>
 
         <div className="row mb-3">

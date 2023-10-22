@@ -10,21 +10,24 @@ function Home() {
   //let [categories,setCategories] = useState([])
   // let {setCategories,categories} = useProductContext()
 
-  // useEffect(() => {
-  //   if (categories.length === 0) dispatch(getCategoryList());
-  // }, []); // only once
+  useEffect(() => {
+    if (categories.length === 0) dispatch(getCategoryList());
+  }, []); // only once
   return (
     <>
       <div className="container-fluid categories" style={{ marginTop: "60px" }}>
         <div className="container">
-          <button onClick={() => dispatch(getCategoryList())}>Get Data</button>
-          <div className="d-flex justify-content-start catemobile gap-3">
+          {/* <button onClick={() => dispatch(getCategoryList())}>Get Data</button> */}
+          <div className="d-flex justify-content-start align-items-end catemobile gap-3">
             {categories.map((value, index) => {
+              // /product-search/1?name=Men%10s%20Clothing
               return (
                 <div
                   key={index}
                   className="items text-center"
-                  onClick={() => navigate("/product-search")}
+                  onClick={() =>
+                    navigate(`/product-search/${value.id}?name=${value.name}`)
+                  }
                 >
                   <div className="catimg">
                     <img width="64px" src={value.image} alt="" />
