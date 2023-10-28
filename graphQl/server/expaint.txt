@@ -1,0 +1,23 @@
+cors --> communicate in between server:3444 & react:3000
+express-graphql --> helper logic
+graphql --> main package
+
+schema -->  structure for our graphql
+
+GraphQLSchema
+    query => GraphQLObjectType
+                    name 
+                    fields ==>
+                        customName ==>
+                            type ==> dataInstance
+                            args ==> {}
+                            resolve==> (resolver, args)=>[
+                                opt
+                            ],
+                        customName ==>
+                            type ==> dataInstance
+                            args ==> {}
+                            resolve==> (resolver, args)=>[
+                                opt
+                            ]
+    mutation
