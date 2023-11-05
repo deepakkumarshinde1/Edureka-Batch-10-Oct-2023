@@ -1,0 +1,19 @@
+testing --> check do project functionality is working as per requirement 
+
+manual testing
+    test cases
+
+        jest --> facebook
+            react testing lib
+
+        Counter.js
+        Counter.test.js
+
+        create test case 
+        query method
+        expectation i.e assertion i.e Assert 
+
+        manual 
+            unit testing
+            functional testing 
+            integrated testing
